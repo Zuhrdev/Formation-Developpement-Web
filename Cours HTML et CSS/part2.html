@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="html">
     <head>
         <title>Mon apprentissage</title>
     </head>
@@ -21,6 +21,68 @@
             </ul>
 
         </div>
+
+        <h1 style="color: red; font-size: 50px;">Les formulaires</h1>
+        <div>
+            <form>
+                <label for="nom">Nom:</label>
+                <input id="nom" type="text" name="nom" placeholder="Veuillez entrer votre nom">    
+            </form>
+        </div>
+        
+        <div style="padding-top: 10px;">
+            <form>
+                <label for="commentaire">Commentaire:</label>
+                <textarea id="commentaire" cols="50" rows="20" placeholder="Veuillez deposer un commentaire"></textarea>
+            </form>
+        </div>
+
+        <div>
+            <h1 style="color:red">Les Checkbox</h1>
+            <form>
+                <input type="checkbox" value="velo">Velo
+                <br>
+                <input type="checkbox" value="moto" checked>Moto
+                <br>
+                <input type="checkbox" value="voiture">voiture
+                <br>
+            </form>
+        </div>
+
+        <div>
+            <h1 style="color:red">Les radios</h1>
+            <form>
+                <input type="radio" value="Monsieur" name="gender">Monsieur
+                <br>
+                <input type="radio" value="Madame" name="gender">Madame
+                <br>
+            </form>
+        </div>
+
+        <div>
+            <h1 style="color:red">Les deroulants</h1>
+            <form>
+                <select name="voiture">
+                    <option value="peugeot">Peugeot</option>
+                    <option value="renault">Renaut</option>
+                    <option value="citroen">Citroen</option>
+                    <option value="mercedes">mercedes</option>
+                </select>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <div>
+            <h1 style="color:red">Les radios</h1>
+            <form>
+                <input type="submit" value="valider">
+            </form>
+        </div>
+
 
     </body>
 </html>

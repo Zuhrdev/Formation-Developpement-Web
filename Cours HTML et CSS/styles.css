@@ -2,4 +2,35 @@ p {
     color: #00FF49;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+}
+
+.special-paragraphe {
+    color: orange;
+}
+
+#unique
+{
+    font-size: 80px;
+    color: red;
+    text-align: center;
+}
+
+a:link{
+    color: purple;
+}
+
+a:visited{
+    color: burlywood;
+}
+
+a:hover{
+    color: blue;
+
 }
