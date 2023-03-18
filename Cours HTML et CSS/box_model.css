@@ -1,0 +1,17 @@
+.red
+{
+    background-color: red;
+    width: 400px;
+    height: 500px;
+    margin : 100px auto;
+    border: 2px solid black ;
+    border-radius: 2%;
+}
+
+.blue
+{
+    background-color: blue;
+    width: 400px;
+    height: 500px;
+    padding: 50px;
+}
