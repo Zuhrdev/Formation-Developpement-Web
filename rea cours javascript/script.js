@@ -1,12 +1,33 @@
 window.onload = function()
 {
-    var canvas = document.createElement('canvas');
-    canvas.width = 900;
-    canvas.height = 600;
-    canvas.style.border = "1px solid";
-    document.body.appendChild(canvas);
+    var canvas;
+    var ctx;
+    var delay = 100;
+    var xCoord = 0;
+    var yCoord = 0;
 
-    var context = canvas.getContext('2d');
-    context.fillStyle = "#ff0000";
-    context.fillRect(30, 30, 100, 50); // premier et seconde arguments = position depuis le coin haut gauche du canvas, deux seconds , largeur et hauteur 
+    init();
+
+    function init()
+    {
+        canvas = document.createElement('canvas');
+        canvas.width = 900;
+        canvas.height = 600;
+        canvas.style.border = "1px solid";
+        document.body.appendChild(canvas);
+        ctx = canvas.getContext('2d');
+        refreshCanvas();
+    }
+
+    function refreshCanvas()
+    {
+        xCoord +=7;
+        yCoord +=7;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#ff0000";
+        ctx.fillRect(xCoord, yCoord, 100, 50); // cordonnées 2 premiers params , puis width et height
+        setTimeout(refreshCanvas, delay);
+    }
+
+
 }
