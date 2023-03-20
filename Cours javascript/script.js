@@ -1,1 +1,3 @@
-console.log("hello je suis dans le file")
+var name = "john";
+
+console.log(name);
